@@ -1,0 +1,66 @@
+body {
+  font-family: 'Arbutus Slab', serif;
+  line-height: 1.5;
+}
+
+a {
+    color: skyblue;
+    text-decoration: none;
+}
+a:focus {
+    text-decoration: underline;
+}
+a:hover {
+    color: thistle;
+}
+
+.hero {
+  background: url(img/wood-tim-web.jpg);
+  padding-left: 16%;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: 16%;
+}
+.container {
+  padding: 20px;
+  color: white;
+  max-width: 45ch;
+}
+.title {
+  letter-spacing: 1px;
+  font-family: 'Alfa Slab One', serif;
+  font-size: 2em;
+  text-shadow: 2px 2px 1px #0009;
+  margin-bottom: 0.8em;
+}
+
+
+p {
+    font-size: 1.15em;
+    margin-bottom: 1.5em;
+    text-shadow: 2px 2px 1px #0009;
+}
+
+
+p.subtitle {
+    font-size: 1.7em;
+}
+
+@media screen and (max-width:600px) {
+  .hidden-sm {
+    display: none;
+  }
+
+  .block-sm {
+    display: block;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .title {font-size: 1.25em;}
+
+  p.subtitle {font-size: 1.15em;}
+}
